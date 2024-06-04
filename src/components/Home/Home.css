@@ -1,0 +1,117 @@
+.site-name {
+  position: absolute;
+  top: 0.5vh;
+  left: 1vw;
+  color: aliceblue;
+  font-family: "La Belle Aurore", cursive;
+  font-size: 4vh;
+  font-style: normal;
+  overflow: hidden;
+}
+
+.site-image {
+  width: 100vw;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0));
+  
+
+}
+
+
+@media (max-width: 600px) {
+ .site-name{
+  top:0.01vh;
+  font-size: 3vh;
+ }
+ .titles{
+  font-size: large;
+ }
+ .chef-image{
+  border: 5px solid white;
+  width:70px;
+ }
+}
+.chef {
+  position: relative;
+  display: inline-block;
+}
+
+.chef-image {
+  border-radius: 50%;
+  width: 25vw;
+  margin: 50px;
+  border: 15px solid white;
+  transition: opacity 0.5s ease;
+}
+
+.chef-image:hover {
+  opacity: 0.5; /* Corrected the opacity value to a valid number */
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5em;
+  font-family: "La Belle Aurore", cursive;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none; /* Ensure the text doesn't interfere with the hover effect */
+}
+
+.chef:hover .hover-text {
+  opacity: 1;
+}
+
+.titles {
+  font-family: "Azeret Mono", monospace;
+  font-weight: 200;
+}
+.container {
+  display: flex;
+  align-items: flex-start; /* Align items to the top of the container */
+}
+.button {
+  background-color: #FFCD29;
+  font-family: "La Belle Aurore", cursive;
+  border: none;
+  border-radius: 5vw;
+  font-size: 25px;
+  font-weight: bold;
+  width:30vw;
+  padding: 20px;
+   /* Add margin between button and yellow box */
+}
+
+/* YellowBox.css */
+.yellow-box {
+  margin-top:100px;
+  border: 0.15vw solid #FFCD29;
+  border-radius: 10px;
+  
+  margin-left: 50px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-image {
+
+  border: 0.2vw solid white;
+  border-radius: 10px;
+  margin-top: 10px;
+   /* Adjust the width as needed */
+  height: auto;
+  margin-right: 15px;
+}
+
+.box-text {
+  margin-left: 1vw;
+  font-size: 20px;
+  text-align: left; /* Align text to the left */
+  font-family: "Armata", sans-serif;
+
+}

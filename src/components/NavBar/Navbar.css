@@ -1,0 +1,53 @@
+.Navbar {
+    width: 100%; /* Ensure Navbar takes full width */
+}
+
+.box {
+    background-color: black;
+    height: 5vh;
+    color: white;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between the items */
+    align-items: center; /* Center items vertically */
+    padding: 0 1vw; /* Add padding to the sides */
+}
+
+.links {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.Home {
+    text-align: left;
+    color: aliceblue;
+    font-size: 17px;
+}
+
+.Signin {
+
+    color: aliceblue; /* Ensure the link has the correct color */
+    text-decoration: none;
+    text-align: right;
+    font-size: 3vh;
+    font-family: "La Belle Aurore", cursive;
+    margin-top: 2vh;
+}
+
+.Signin a:hover {
+    color: #FFCD29; /* Change color on hover */
+}
+
+.Loggedin {
+    color: aliceblue;
+}
+
+.site-name {
+    color: aliceblue;
+    font-family: "La Belle Aurore", cursive;
+    font-size: 4vh;
+    font-style: normal;
+}
+
+.site-name:hover {
+    color: #FFCD29;
+}

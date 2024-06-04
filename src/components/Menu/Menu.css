@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Armata&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Calligraffitti&family=La+Belle+Aurore&display=swap');
+.option{
+    border: none;
+    background-color: transparent;
+    
+    margin:0 6vw;
+    color: purple;
+    font-family: "Averia Serif Libre", serif;
+    font-size: 30px;
+
+
+}
+
+.option.selected {
+    color: #FFCD29;
+  }
+.option:hover{
+    color: #FFCD29;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Add some margin below the buttons */
+  }
+.universal {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    color: white;
+    justify-content: center;
+    background-color: black;
+    height: 100%;
+    align-items: center;
+    margin: 0; /* Remove default margin */
+}
+.aclonica-regular {
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 5vh;
+    font-size: 60px;
+}
+.yellowbox {
+    border: 0.15vw solid #FFCD29;
+    border-radius: 10px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head {
+    font-family: "Calligraffitti", cursive;
+}
+.sub-title {
+    font-style: italic;
+}
+.course-title {
+    color: #FFE8A3;
+    font-family: "Averia Serif Libre", serif;
+    margin-bottom: 5px;
+}
+.course-name {
+    color: #E6E6E6;
+    font-family: "Azeret Mono", monospace;
+}
+.button {
+    background-color: #FFCD29;
+    font-family: "La Belle Aurore", cursive;
+    border: none;
+    border-radius: 5vw;
+    font-size: 25px;
+    font-weight: bold;
+    width: 20vw;
+    padding: 20px;
+    margin-top: 20px; /* Add margin between button and other content */
+    margin-bottom:1vh;
+}
