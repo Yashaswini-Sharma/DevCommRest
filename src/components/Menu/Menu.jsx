@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Menu.css'; // Ensure to import your CSS file
 import Navbar from '../NavBar/Navbar'
+import { Link } from 'react-router-dom';
 
 const App = () => {
   const mementoMoriMenu = {
@@ -87,7 +88,7 @@ const App = () => {
             )}
           </div>
         ))}
-        <button className='button'>Know your experience</button>
+        <button className='button'><Link to="/us" style={{textDecoration:'None', color:'black'}}>Know your experience</Link></button>
       </div>
     </div>
   );

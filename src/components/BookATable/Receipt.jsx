@@ -11,7 +11,7 @@ const Receipt = () => {
   return (
 
     <div className='universal' style={{height:'100vh'}}>
-
+<Navbar/>
       <h1 className='aclonica-regular'>Booking Receipt</h1>
       <div className='yellowbox'>
         <h1 className='head'>Booking Details</h1>
