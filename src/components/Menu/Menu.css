@@ -75,3 +75,13 @@
     margin-top: 20px; /* Add margin between button and other content */
     margin-bottom:1vh;
 }
+.inp{
+    margin: 1vw;
+    background-color: purple;
+    color: #FFCD29;
+    border: none;
+    width: 30vw;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #FFCD29;
+  }

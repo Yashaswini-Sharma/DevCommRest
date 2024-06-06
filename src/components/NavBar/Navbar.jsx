@@ -13,7 +13,7 @@ const Navbar = (props) => {
 					</Link>
 				</div>
 				<div className="Signin" style={{color:"white"}}>
-					<Link to="/login">Book a Table</Link>
+					<Link to="/book" style={{color:"white"}}>Book a Table</Link>
 				</div>
 			</div>
 		</div>

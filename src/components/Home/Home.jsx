@@ -29,7 +29,7 @@ const Home = (props) => {
       @import url('https://fonts.googleapis.com/css2?family=Armata&family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=La+Belle+Aurore&display=swap');
       </style>
       <img src={rest} className="site-image" alt="Restaurant background" />
-      <h1 className="site-name">Ms. Naive's palace</h1>
+      <h1 className="site-name">Ms. Naive's Palace</h1>
 
       <h1 className="titles">OUR CHEFS</h1>
       <div className="Chefs">
@@ -48,15 +48,15 @@ const Home = (props) => {
       <img src={food} alt="Description" className="box-image" style={{width: "40vw"}}/>
       <p className="box-text">Dine with us at Ms. Naive’s palace, where culinary delights blend harmoniously with the environment, creating a seamless and enchanting atmosphere.</p>
     </div>
-    <button className="button" style={{marginTop: '40vh', marginLeft: '5vw'}}>Our Menu</button>
+    <button className="button" style={{marginTop: '40vh', marginLeft: '5vw'}}><Link to="/menu" style={{textDecoration:'None', color:'black'}}>Our Menu</Link></button>
     </div>
     <div className="yellow-box" style={{width:'93vw'}}>
       <img src={date} alt="Description" className="box-image" style={{width: "90vw"}}/>
       <p className="box-text">Indulge in a dining experience that tantalizes all your senses and transports you to a realm of exquisite flavors and aesthetic beauty.</p>
-      <button className="button">Book a Table</button>
+      <button className="button"><Link to="/book" style={{textDecoration:'None', color:'black'}}>Book a Table</Link></button>
     </div>
     <div className="container">
-    <button className="button" style={{marginTop: '40vh', marginLeft: '10vw', marginRight:'10vw'}}>Get to know us</button>
+    <button className="button" style={{marginTop: '40vh', marginLeft: '10vw', marginRight:'10vw'}}><Link to="/us" style={{textDecoration:'None', color:'black'}}>Get to know us</Link></button>
     <div className="yellow-box" style={{width:'42vw'}}>
       <img src={knife} alt="Description" className="box-image" style={{width: "40vw"}}/>
       <p className="box-text" style={{textAlign: "right", marginRight: "1vw"}}>Ms. Naive's knife set seamlessly blends precision and elegance, transforming every culinary creation into a masterpiece.
@@ -65,11 +65,6 @@ const Home = (props) => {
     </div>
     
 
-
-      <Link to="/login">Sign In</Link>
-      <br />
-      <Link to="/SignUp">Sign up</Link>
-      <h2>{props.name ? `Welcome - ${props.name}` : "Login please"}</h2>
     </div>
   );
 };

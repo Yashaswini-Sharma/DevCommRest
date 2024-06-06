@@ -3,8 +3,11 @@ import rest from './kallavesi-lake-3840x2160-9645.jpg';
 import './Your.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
+import './Review'
+import Reviews from './Review';
+import Navbar from '../NavBar/Navbar';
 
-const Your = () => {
+const Your = (props) => {
   const [answersVisible, setAnswersVisible] = useState({
     prices: false,
     msNaive: false,
@@ -24,7 +27,7 @@ const Your = () => {
         @import url('https://fonts.googleapis.com/css2?family=Armata&family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=La+Belle+Aurore&display=swap');
       </style>
       <img src={rest} className="site-image" alt="Restaurant background" />
-      <h1 className="site-name">Ms. Naive's Palace</h1>
+      <Navbar/>
       <div className='text-container'>
         <p>
           Sitting at a table overlooking the sea at Ms. Naive's, the atmosphere is nothing short of enchanting. The waves gently lap against the shore, their rhythmic dance providing a soothing soundtrack to the evening. The sky transitions from a brilliant blue to shades of pink and orange as the sun begins to set, casting a warm, golden glow over everything.
@@ -81,6 +84,9 @@ const Your = () => {
           </div>
         </div>
       </div>
+      <br/>
+      <h1>Reviews</h1>
+      <Reviews name={props.name}/>
     </div>
   );
 }

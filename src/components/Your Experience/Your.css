@@ -39,20 +39,26 @@ body {
   align-items: center;
   padding: 10px;
   margin: 10px auto;
-  position: relative; /* Added to position the arrow inside the box */
+  position: relative;
+}
+
+.inp {
+  margin: 1vw;
+  background-color: purple;
+  color: #FFCD29;
+  border: none;
+  width: 70vw;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #FFCD29;
 }
 
 .toggle-button {
-  
-  display: block;
-  margin: 10px auto;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
   background-color: transparent;
   color: white;
   border: none;
-  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .faq {
@@ -63,18 +69,11 @@ body {
   margin-bottom: 20px;
 }
 
-.question {
+.question-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-}
-
-.arrow-icon {
-  position: absolute;
-  right: 10px; /* Position the arrow to the right of the box */
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .answer {

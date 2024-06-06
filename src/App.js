@@ -4,7 +4,9 @@ import SignIn from './components/auth/SignIn';
 import SignUp from './components/auth/SignUp';
 import Home from './components/Home/Home';
 import Menu from './components/Menu/Menu';
-import Your from './components/Your Experience/Your'
+import Your from './components/Your Experience/Your';
+import Table from './components/BookATable/table';
+import Receipt from './components/BookATable/Receipt';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { auth } from './firebase';
@@ -30,7 +32,11 @@ function App() {
           <Route path="/login" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path='/menu' element={<Menu/>}/>
-          <Route path='/us' element={<Your/>}/>
+          <Route path='/book' element={<Table/>}/>
+          <Route path="/receipt" element={<Receipt />} />
+
+
+          <Route path='/us' element={<Your name={userName } />}/>
           <Route path="/" element={<Home name={userName } />}/>
         </Routes>
       </Router>
